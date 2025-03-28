@@ -14,22 +14,22 @@ const Navbar = (): React.ReactNode => {
 
       <ul className="flex gap-3 text-white">
         <li className="text-emerald-600 font-bold hover:text-emerald-600">
-          <Link href="">Inicio</Link>
+          <Link href="/">Inicio</Link>
         </li>
         <li className="font-bold hover:text-emerald-600">
-          <Link href="">Sobre nós</Link>
+          <Link href="/sobre-nos">Sobre nós</Link>
         </li>
         <li className="font-bold hover:text-emerald-600">
-          <Link href="">Laboratório de Análises Ambientais</Link>
+          <Link href="/laboratorio">Laboratório de Análises Ambientais</Link>
         </li>
         <li className="font-bold hover:text-emerald-600">
-          <Link href="">Engenharia Ambiental</Link>
+          <Link href="/engenharia">Engenharia Ambiental</Link>
         </li>
         <li className="font-bold hover:text-emerald-600">
-          <Link href="">Entre em Contato</Link>
+          <Link href="/contato">Entre em Contato</Link>
         </li>
         <li className="font-bold hover:text-emerald-600">
-          <Link href="">Parceiros</Link>
+          <Link href="/parceiros">Parceiros</Link>
         </li>
       </ul>
     </nav>
