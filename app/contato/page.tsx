@@ -1,10 +1,31 @@
+import emailjs from "emailjs-com"
+
+const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault()
+
+  emailjs.sendForm(
+    "service_liu5ypb",
+    "template_clzkcam",
+    e.target as HTMLFormElement,
+    "Y03uX5fWkRa6V6cnZ"
+  ).then(
+    (result) => {
+      alert("E-mail enviado com sucesso!");
+    },
+    (error) => {
+      alert("Erro ao enviar e-mail.");
+    }
+  );
+};
+
+
 export default function Contato() {
     return (
       <main>
         <h1>Entre em contato</h1>
         <p>Preencha o formulário abaixo:</p>
 
-        <form>
+        <form onSubmit={sendEmail}>
           <label className="block text-gray-700 font-medium mb-2">Nome</label>
           <input type="text" placeholder="Seu Nome"/>
 
