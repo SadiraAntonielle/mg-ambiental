@@ -6,9 +6,9 @@ import Link from "next/link";
 
 const Navbar = (): React.ReactNode => {
   return (
-    <nav className="w-full rounded-3xl flex justify-around !p-4 bg-zinc-900">
+    <nav className="w-full rounded-full flex justify-around !p-4 bg-[#181818]">
       <div className="flex shrink-0 gap-1">
-        {/* <Image src="" width={100} height={100} alt="Logo" /> */}
+        {/* <Image "/mgambiental02.jpg""" width={100} height={100} alt="Logo" /> */}
         <h1 className="text-white font-black">MG Ambiental</h1>
       </div>
 

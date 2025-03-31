@@ -18,21 +18,21 @@ export default function Home(): React.ReactNode {
             Gerais.
           </h3>
 
-          <nav className="flex justify-center gap-3 mt-10">
+          <nav className="flex justify-center gap-3 mt-10 text-white">
             <Link
-              className="bg-emerald-800 p-2 rounded-2xl font-black hover:bg-emerald-900 text-center"
+              className="bg-emerald-800 p-4 rounded-2xl font-black hover:bg-emerald-900 text-center"
               href="*"
             >
               Laboratório de Análises Ambientais
             </Link>
             <Link
-              className="bg-emerald-800 p-2 rounded-2xl font-black hover:bg-emerald-900 text-center"
+              className="bg-emerald-800 p-4 rounded-2xl font-black hover:bg-emerald-900 text-center"
               href="*"
             >
               Engenharia Ambiental
             </Link>
             <Link
-              className="bg-emerald-800 p-2 rounded-2xl font-black hover:bg-emerald-900 text-center"
+              className="bg-emerald-800 p-4 rounded-2xl font-black hover:bg-emerald-900 text-center"
               href="*"
             >
               Topografia e Georreferenciamento
@@ -40,23 +40,37 @@ export default function Home(): React.ReactNode {
           </nav>
         </section>
 
-        <aside className="max-w-1/2 w-full h-full grid grid-cols-2 p-2">
-          <div className="border border-amber-50 justify-self-end self-end">
-            teste 1
-          </div>
-          <div className="border border-amber-50 justify-self-stretch self-center">
-            teste 2
-          </div>
-          <div className="border border-amber-50">teste 3</div>
-          <div className="border border-amber-50 justify-self-start self-start">
-            teste 4
-          </div>
-          <div className="col-start-2 border border-amber-50 justify-self-stretch self-center">
-            teste 5
-          </div>
+        <aside className="max-w-1/2 w-full h-full grid grid-cols-2 gap-6 p-2">
+          <Image
+            src="/mgambiental02.jpg"
+            alt=""
+            width={1000}
+            height={1000}
+            className="rounded-xl w-2/3 h-full justify-self-end self-end"
+          />
+          <Image
+            src="/lab01.png"
+            alt=""
+            width={1000}
+            height={1000}
+            className="rounded-xl w-full h-2/3 justify-self-stretch self-center"
+          />
+          <Image
+            src="/placa.jpg"
+            alt=""
+            width={1000}
+            height={1000}
+            className="rounded-xl border"
+          />
+          <Image
+            src="/topgrafia.png"
+            alt=""
+            width={1000}
+            height={1000}
+            className="rounded-xl w-1/2 h-1/2 justify-self-start self-start"
+          />
         </aside>
       </main>
-      <footer></footer>
     </>
   );
 }
