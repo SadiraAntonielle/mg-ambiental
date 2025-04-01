@@ -4,7 +4,8 @@ import React from "react";
 }
 import Link from "next/link";
 
-const Navbar = (): React.ReactNode => {
+const Navbar = ({ props }: { props: string }): React.ReactNode => {
+  console.log(props, "props");
   return (
     <nav className="w-full rounded-full flex justify-around !p-4 bg-[#181818]">
       <div className="flex shrink-0 gap-1">
@@ -12,23 +13,53 @@ const Navbar = (): React.ReactNode => {
         <h1 className="text-white font-black">MG Ambiental</h1>
       </div>
 
-      <ul className="flex gap-3 text-white">
-        <li className="text-emerald-600 font-bold hover:text-emerald-600">
-          <Link href="">Inicio</Link>
+      <ul className="flex gap-3 font-bold text-white">
+        <li
+          className={
+            props === "" ? "text-emerald-600  " : "hover:text-emerald-600"
+          }
+        >
+          <Link href="/">Inicio</Link>
         </li>
-        <li className="font-bold hover:text-emerald-600">
-          <Link href="">Sobre nós</Link>
+        <li
+          className={
+            props === "SobreNos"
+              ? "text-emerald-600  "
+              : "hover:text-emerald-600"
+          }
+        >
+          <Link href="sobre-nos">Sobre nós</Link>
         </li>
-        <li className="font-bold hover:text-emerald-600">
+        <li
+          className={
+            props === "lab" ? "text-emerald-600  " : "hover:text-emerald-600"
+          }
+        >
           <Link href="">Laboratório de Análises Ambientais</Link>
         </li>
-        <li className="font-bold hover:text-emerald-600">
+        <li
+          className={
+            props === "eng" ? "text-emerald-600  " : "hover:text-emerald-600"
+          }
+        >
           <Link href="">Engenharia Ambiental</Link>
         </li>
-        <li className="font-bold hover:text-emerald-600">
+        <li
+          className={
+            props === "contato"
+              ? "text-emerald-600  "
+              : "hover:text-emerald-600"
+          }
+        >
           <Link href="">Entre em Contato</Link>
         </li>
-        <li className="font-bold hover:text-emerald-600">
+        <li
+          className={
+            props === "Parceiros"
+              ? "text-emerald-600  "
+              : "hover:text-emerald-600"
+          }
+        >
           <Link href="">Parceiros</Link>
         </li>
       </ul>

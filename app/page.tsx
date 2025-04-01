@@ -8,7 +8,7 @@ export default function Home(): React.ReactNode {
   return (
     <>
       <header className="w-screen p-8">
-        <Navbar />
+        <Navbar props="" />
       </header>
       <main className="flex gap-3 w-screen h-screen max-h-2/3 py-8 px-16 items-center">
         <section className="max-w-1/2 w-full p-2">
