@@ -35,15 +35,23 @@ const Navbar = ({ props }: { props: string }): React.ReactNode => {
             props === "lab" ? "text-emerald-600  " : "hover:text-emerald-600"
           }
         >
-          <Link href="">Laboratório de Análises Ambientais</Link>
+          <Link href="laboratorio">Laboratório de Análises Ambientais</Link>
         </li>
         <li
           className={
             props === "eng" ? "text-emerald-600  " : "hover:text-emerald-600"
           }
         >
-          <Link href="">Engenharia Ambiental</Link>
+          <Link href="engenharia">Engenharia Ambiental</Link>
         </li>
+        <li
+          className={
+            props === "top" ? "text-emerald-600  " : "hover:text-emerald-600"
+          }
+        >
+          <Link href="topografia">Topografia</Link>
+        </li>
+
         <li
           className={
             props === "contato"

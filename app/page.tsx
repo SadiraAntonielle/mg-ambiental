@@ -21,19 +21,19 @@ export default function Home(): React.ReactNode {
           <nav className="flex justify-center gap-3 mt-10 text-white">
             <Link
               className="bg-emerald-800 p-4 rounded-2xl font-black hover:bg-emerald-900 text-center"
-              href="*"
+              href="laboratorio"
             >
               Laboratório de Análises Ambientais
             </Link>
             <Link
               className="bg-emerald-800 p-4 rounded-2xl font-black hover:bg-emerald-900 text-center"
-              href="*"
+              href="engenharia"
             >
               Engenharia Ambiental
             </Link>
             <Link
               className="bg-emerald-800 p-4 rounded-2xl font-black hover:bg-emerald-900 text-center"
-              href="*"
+              href="topografia"
             >
               Topografia e Georreferenciamento
             </Link>
