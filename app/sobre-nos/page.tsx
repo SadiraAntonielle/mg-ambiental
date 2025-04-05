@@ -28,7 +28,7 @@ export default function SobreNos(): React.ReactNode {
             alt=""
             width={1000}
             height={1000}
-            className="rounded-xl w-2/3 "
+            className="rounded-xl justify-self-center self-center w-2/3 "
           />
         </section>
 
@@ -38,7 +38,7 @@ export default function SobreNos(): React.ReactNode {
             alt=""
             width={1000}
             height={1000}
-            className="rounded-xl w-2/3 "
+            className="rounded-xl justify-self-center self-center w-2/3 "
           />
           <p className="text-black text-xl">
             Buscamos sempre a excelência na qualidade e agilidade dos serviços e

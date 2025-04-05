@@ -63,12 +63,12 @@ const Navbar = ({ props }: { props: string }): React.ReactNode => {
         </li>
         <li
           className={
-            props === "Parceiros"
+            props === "parceiros"
               ? "text-emerald-600  "
               : "hover:text-emerald-600"
           }
         >
-          <Link href="">Parceiros</Link>
+          <Link href="parceiros">Parceiros</Link>
         </li>
       </ul>
     </nav>

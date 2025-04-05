@@ -18,7 +18,7 @@ export default function Laboratorio(): React.ReactNode {
             alt=""
             width={1000}
             height={1000}
-            className="rounded-xl w-2/3 "
+            className="rounded-xl justify-self-center self-center w-2/3 "
           />
           <p className="text-black text-xl">
             O laboratório da MG Ambiental está se estruturando para atender as
@@ -49,7 +49,7 @@ export default function Laboratorio(): React.ReactNode {
             alt=""
             width={1000}
             height={1000}
-            className="rounded-xl w-2/3 "
+            className="rounded-xl justify-self-center self-center w-2/3 "
           />
         </aside>
       </main>

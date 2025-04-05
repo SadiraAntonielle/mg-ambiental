@@ -46,28 +46,28 @@ export default function Home(): React.ReactNode {
             alt=""
             width={1000}
             height={1000}
-            className="rounded-xl w-2/3 h-full justify-self-end self-end"
+            className="rounded-xl justify-self-center self-center w-2/3 h-full justify-self-end self-end"
           />
           <Image
             src="/lab01.png"
             alt=""
             width={1000}
             height={1000}
-            className="rounded-xl w-full h-2/3 justify-self-stretch self-center"
+            className="rounded-xl justify-self-center self-center w-full h-2/3 justify-self-stretch self-center"
           />
           <Image
             src="/placa.jpg"
             alt=""
             width={1000}
             height={1000}
-            className="rounded-xl border"
+            className="rounded-xl justify-self-center self-center border"
           />
           <Image
             src="/topgrafia.png"
             alt=""
             width={1000}
             height={1000}
-            className="rounded-xl w-1/2 h-1/2 justify-self-start self-start"
+            className="rounded-xl justify-self-center self-center w-1/2 h-1/2 justify-self-start self-start"
           />
         </aside>
       </main>
